@@ -7,7 +7,6 @@ package dao;
 
 import dto.UserDTO;
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -33,7 +32,9 @@ public class UserDAO {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager
-                    .getConnection("jdbc:mysql://localhost:3306/medreminder", "root", "Hsghl811");
+                    .getConnection("jdbc:mysql://sql7.freemysqlhosting.net:3306/sql7116984", "sql7116984", "N8qjBKcGL4");
+            System.out.println("connection open");
+
         } catch (ClassNotFoundException e) {
             System.out.println("Where is your MySQL JDBC Driver?");
             e.printStackTrace();
